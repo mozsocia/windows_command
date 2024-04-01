@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Add "Open with Sublime Text" context menu for folders (64-bit)
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWithSublimeText]
+@="Open with Sublime Text"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWithSublimeText\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%1\""
+
+; Add "Open with Sublime Text" context menu for folders (32-bit)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithSublimeText]
+@="Open with Sublime Text"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithSublimeText\command]
+@="\"C:\\Program Files (x86)\\Sublime Text\\sublime_text.exe\" \"%V\""
+
+; Make sure to replace "C:\\Program Files\\Sublime Text\\sublime_text.exe" and "C:\\Program Files (x86)\\Sublime Text\\sublime_text.exe" with the actual path to your Sublime Text executable on your system.
